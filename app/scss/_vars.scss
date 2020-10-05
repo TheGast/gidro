@@ -1,0 +1,20 @@
+@mixin sf-regular{
+	font-family: 'SFProDisplay-Regular', sans-serif;
+	font-weight: 400;
+}
+@mixin sf-medium{
+	font-family: 'SFProDisplay-Medium', sans-serif;	
+	font-weight: 500;
+}
+@mixin sf-semibold{
+	font-family: 'SFProDisplay-Semibold', sans-serif;
+	font-weight: 600;
+}
+@mixin sf-bold{
+	font-family: 'SFProDisplay-Bold', sans-serif;
+	font-weight: 700;
+}
+
+$text: #2F3035;
+$blue: #1C62CD;
+$bg-gray: #F0F0F4;
