@@ -52,6 +52,10 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
+p{
+	margin: 0;
+	padding: 0;
+}
 
 //
 body{
@@ -64,4 +68,8 @@ body{
 	max-width: 1200px;
 	padding: 0 15px;
 	margin: 0 auto;
+}
+.price{
+	font-family: 'Barlow', sans-serif;
+	position: relative;
 }
