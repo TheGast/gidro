@@ -70,7 +70,7 @@
 }
 
 .header__bottom {
-	margin-bottom: 78px;
+	margin-bottom: 80px;
 }
 
 .menu-categories {
@@ -118,7 +118,7 @@
 .banner-section{
 	&__inner{
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-between;		
 	}
 	&__slider{
 		max-width: 870px;		
@@ -259,7 +259,115 @@
 }
 //end banner-slider
 
-
+//start tabs
+.search__tabs{
+	margin-bottom: 25px;
+}
+.search__tabs-item{
+	padding: 11px 26px 12px;
+}
+.search__tabs-item--active{
+	border-radius: 5px;
+	background-color: $bg-gray;
+	@include sf-bold;
+}
+.search__content-item{
+	display: none;
+}
+.search__content-item--active{
+	display: block;
+}
+.search__content-form{
+	display: flex;
+}
+.search__content-input{
+	background-color: $bg-gray;
+	border: none;
+	padding: 5px 20px; 
+	border-radius: 3px;
+	width: 100%;
+	font-size: 16px;
+	line-height: 19px;	
+	&::placeholder{
+		font-size: 16px;
+		line-height: 19px;
+		color: #656464;
+	}
+}
+.search__content-btn{
+	background-color: $blue;
+	@include sf-bold;
+	color: #fff;  
+	border: none;
+	text-transform: uppercase; 
+	border-radius: 3px; 
+	padding: 17px 41px;
+	margin-left: -3px;
+	cursor: pointer;
+}
+//end nabs
+//start categories
+.categories{
+	&__inner{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;		
+	}
+	&__item{
+		margin-bottom: 30px;		
+		border: 1px solid #CDCDCD;
+		border-radius: 3px;
+		max-width: 370px;	
+		height: 129px;	
+		width: 100%;
+		display: flex;
+		justify-content: space-between;	
+		align-items: center;	
+		transition: all .3s;
+		&:hover{
+			box-shadow: (3px 3px 20px rgba(50, 50, 50, 0.25));
+			.categories__item-title{
+				color: $blue;
+			}
+		}
+	}
+	&__item-info{
+		padding: 20px 20px 16px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+	}
+	&__item-img{
+		text-align: center;
+		padding: 15px 10px;
+		height: 100%;
+		width: 100%;				
+		img{
+			padding: 0;
+			width: 100%;
+			object-fit: contain;						
+		}
+	}
+	&__item-title{
+		font-size: 23px;
+		line-height: 28px;
+		@include barlow;
+		font-weight: 700;
+		color: $text;
+		transition: all .3s;
+	}
+	&__item-text{
+		font-size: 14px;
+		line-height: 17px;
+		color: $text-gray;
+		&::after{
+			content: url('../images/link-arrow.svg');
+			padding-left: 2px;
+		}
+	}
+}
+//end categories
 
 
 

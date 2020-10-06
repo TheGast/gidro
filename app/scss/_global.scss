@@ -51,6 +51,7 @@ li {
 a {
 	text-decoration: none;
 	color: inherit;
+	display: inline-block;
 }
 p{
 	margin: 0;
@@ -72,4 +73,7 @@ body{
 .price{
 	font-family: 'Barlow', sans-serif;
 	position: relative;
+}
+.page-section{
+	margin-bottom: 80px;
 }

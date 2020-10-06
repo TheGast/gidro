@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
     ttf2woff = require('gulp-ttf2woff'),
-    ttf2woff2 = require('gulp-ttf2woff2'),
+    ttf2woff2 = require('gulp-ttf2woff2'),    
     autoprefixer = require('gulp-autoprefixer');
 
 
@@ -46,22 +46,30 @@ gulp.task('script', function(){
 //сжимаем изображения
 gulp.task('imagemin', function(){
      return gulp.src([
-         'content/*.jpg',
-         'content/*.png',         
+         'dev/*.jpg',
+         'dev/*.png',         
      ])
         .pipe(imagemin())
-        .pipe(gulp.dest('app/images'))
+        .pipe(gulp.dest('app/images'))        
+});
+gulp.task('imagemin-cont', function(){
+     return gulp.src([
+         'cont/*.jpg',
+         'cont/*.png',         
+     ])
+        .pipe(imagemin())
+        .pipe(gulp.dest('app/images/content'))
 });
 
 //конвертируем шрифты
 gulp.task('ttf2woff', function(){
-    return gulp.src('content/*.ttf')
+    return gulp.src('dev/*.ttf')
         .pipe(ttf2woff())
         .pipe(gulp.dest('app/fonts'))
 });
 
 gulp.task('ttf2woff2', function(){
-    return gulp.src('content/*.ttf')
+    return gulp.src('dev/*.ttf')
         .pipe(ttf2woff2())
         .pipe(gulp.dest('app/fonts'))
 });
@@ -79,11 +87,13 @@ gulp.task('js', function(){
 gulp.task('watch', function(){
     gulp.watch('app/*.html', gulp.parallel('html'));
     gulp.watch('app/js/*.js', gulp.parallel('js'));
-    gulp.watch('app/scss/**/*.scss', gulp.parallel('scss'));
-    gulp.watch('content/*.jpg', gulp.parallel('imagemin'));
-    gulp.watch('content/*.png', gulp.parallel('imagemin'));
-    gulp.watch('content/*.ttf', gulp.parallel('ttf2woff'));
-    gulp.watch('content/*.ttf', gulp.parallel('ttf2woff2'));
+    gulp.watch('app/scss/**/*.scss', gulp.parallel('scss'));    
+    gulp.watch('dev/*.jpg', gulp.parallel('imagemin'));
+    gulp.watch('dev/*.png', gulp.parallel('imagemin'));
+    gulp.watch('cont/*.jpg', gulp.parallel('imagemin-cont'));
+    gulp.watch('cont/*.png', gulp.parallel('imagemin-cont'));
+    gulp.watch('dev/*.ttf', gulp.parallel('ttf2woff'));
+    gulp.watch('dev/*.ttf', gulp.parallel('ttf2woff2'));
 });
 
 //поднимаем локальный сервер

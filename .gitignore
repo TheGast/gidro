@@ -1,5 +1,7 @@
 node_modules/
-content/
+dev
+cont
+
 
 .DS_store
 .AppleDouble
