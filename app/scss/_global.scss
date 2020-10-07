@@ -77,3 +77,53 @@ body{
 .page-section{
 	margin-bottom: 80px;
 }
+//breadcrumbs
+.breadcrumbs{
+	margin-bottom: 40px;
+}
+.breadcrumbs__list-item{
+	display: inline-block;
+	padding-right: 16px;
+	margin-right: 10px;
+	position: relative;
+	font-size: 15px;
+	line-height: 18px;
+	color: $text-gray;
+	&::after{
+		position: absolute;
+		content: '';
+		right: -3px;
+		bottom: 4px;
+		width: 6px;
+		height: 9px;
+		background-image: url('../images/link-arrow.svg');
+	}
+}
+.breadcrumbs__list-item:last-child::after{
+	display: none;
+}
+
+//pagination
+.pagination{
+	width: 100%;
+	margin-top: 70px;
+}
+.pagination-list{
+	display: flex;
+	justify-content: center;
+	&__item{
+		padding: 6px 12px;
+		border: 2px solid transparent;
+		font-size: 18px;
+		line-height: 22px;
+		color: $text-gray;
+		margin: 0 4px;
+		@include barlow;
+		font-weight: 400;
+		&.active{		
+			color: $blue;
+			border: 2px solid $blue;
+			font-weight: 600;
+		}				
+	}
+}
