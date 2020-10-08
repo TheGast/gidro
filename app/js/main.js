@@ -36,5 +36,14 @@ $(function(){
     $('.product-item__favorite').on('click', function(){
       $(this).toggleClass('product-item__favorite--active');
     });
+
+    $('.filter-style').styler();
+
+    $('.filter__item-drop').on('click', function(){
+      $(this).toggleClass('filter__item-drop--active');
+      $(this).next().slideToggle('200');
+    });
+
+    $(".js-range-slider").ionRangeSlider();
 	
 });

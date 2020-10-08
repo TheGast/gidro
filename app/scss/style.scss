@@ -643,7 +643,7 @@
 }
 //end footer
 
-//start product on product-page
+//start product on catalog-page
 .catalog{
 	margin-bottom: 100px;
 	&__title{
@@ -706,9 +706,119 @@ button.catalog__filter-btnlist{
 		margin-bottom: 30px;
 	}
 }
-//end product on product-page
+//end product on catalog-page
 
-
+//start aside-tabs
+.aside-filter__tabs{
+	display: flex;
+	justify-content: space-between;	
+}
+.aside-filter__tab{
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	color: $text-gray;	
+	width: 50%;
+	span{
+		padding-bottom: 7px;
+	}
+	&.tab--active{
+		span{
+			display: inline-block;
+			@include sf-bold;
+			color: $text;
+			border-bottom: 2px solid $blue;
+		}		
+	}
+}
+.aside-filter__item-drop{
+	margin: 40px 0;
+}
+.aside-filter__item-title{
+	font-size: 16px;
+	line-height: 19px;
+	@include sf-semibold;
+	padding-left: 26px;
+}
+.filter__item-drop{	
+	position: relative;
+	cursor: pointer;
+	&::before{
+		position: absolute;
+		content: '';
+		background-image: url('../images/arrow-down.svg');
+		left: 0;
+		bottom: 5px;
+		width: 12px;
+		height: 8px;
+		transform: rotate(0deg);
+		transition: all .3s;
+	}
+}
+.filter__item-drop--active{
+	&::before{		
+		transform: rotate(180deg);
+	}
+}
+.aside-filter__content{
+	display: flex;	
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+.aside-filter__content-box{
+	width: 50%;	
+}
+.aside-filter__content-label{
+	font-size: 14px;
+	line-height: 17px;
+	color: #000;
+	cursor: pointer;
+}
+.jq-checkbox,
+.jq-radio{
+	background: #fff;
+	width: 14px;
+	height: 14px;
+	border: 1px solid $text-gray;
+	border-radius: 1px;
+	box-shadow: none;	
+	vertical-align: -2px;
+	margin-right: 8px;
+	&.focused{
+		border: 1px solid $text-gray;
+		border-radius: 1px;
+	}
+	&.checked{
+		background: $blue;		
+		border: none;
+		border: 1px solid $blue;
+	}
+}
+.jq-checkbox.checked .jq-checkbox__div{
+	width: 8px;
+	height: 6px;
+	margin: 3px 0 0 2px;
+	border-bottom: none;
+	border-left: none;	
+	transform: rotate(0);
+	background-image: url('../images/checked-icon.svg');
+}
+.jq-radio.checked .jq-radio__div {
+	width: 0;
+	height: 0;
+	margin: 0;
+	border-radius: 0;
+	background: transparent;
+	box-shadow: none;
+}
+.aside-filter__content.aside-filter__content-radio{
+	flex-wrap: nowrap;
+}
+.irs--flat{
+	width: 100%;
+}
+//end aside-tabs
 
 
 
