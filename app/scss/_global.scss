@@ -64,6 +64,8 @@ body{
 	font-size: 20px;
 	line-height: 24px;
 	@include sf-regular;	
+	overflow-x: hidden;
+	min-width: 320px;
 }
 .container{
 	max-width: 1200px;
@@ -126,4 +128,19 @@ body{
 			font-weight: 600;
 		}				
 	}
+}
+
+//бургер
+.menu__btn{
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+}
+.menu__btn-line{
+	border-radius: 3px;
+	background-color: $text;
+	height: 3px;
+	width: 34px;
+	margin: 8px 0;
 }
