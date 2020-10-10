@@ -19,6 +19,11 @@
           <div class="container">
             <div class="header__top-inner">
               <nav class="menu">
+                <button class="menu__btn">
+                  <div class="menu__btn-line"></div>
+                  <div class="menu__btn-line"></div>
+                  <div class="menu__btn-line"></div>
+                </button>
                 <ul class="menu__list">
                   <li class="menu__item">
                     <a class="menu__link" href="#">Магазины</a>
@@ -58,6 +63,103 @@
             </div>
           </div>
         </div>
+        <ul class="menu-mobile__list">
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <img class="menu-mobile__img" src="images/user.svg" alt="">
+              <p>Войти</p>
+            </a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <img class="menu-mobile__img" src="images/user.svg" alt="">
+              <p>Регистрация</p>
+            </a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <img class="menu-mobile__img" src="images/heart.svg" alt="">
+              <p>Избранное</p>
+            </a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <img class="menu-mobile__img" src="images/basket.svg" alt="">
+              <p>Корзина</p>
+            </a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <img class="menu-mobile__img" src="images/home.svg" alt="">
+              <p>Магазины</p>
+            </a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <img class="menu-mobile__img" src="images/procent.svg" alt="">
+              <p>Акции</p>
+            </a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <img class="menu-mobile__img" src="images/box.svg" alt="">
+              <p>Доставка и оплата</p>
+            </a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <p>Квадроциклы</p>
+            </a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <p>Катера</p>
+            </a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <p>Гидроциклы</p>
+            </a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <p>Лодки</p>
+            </a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <p>Вездеходы</p>
+            </a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <p>Снегоходы</p>
+            </a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <p>Двигатели</p>
+            </a>
+          </li>
+          <li class="menu-mobile__item">
+            <a class="menu-mobile__link" href="#">
+              <p>Запчасти</p>
+            </a>
+          </li>
+        </ul>
+        <div class="menu__mobile-linewrapper">
+          <ul class="menu__mobile-line">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Магазины</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Акции</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Доставка и оплата</a>
+            </li>
+          </ul>
+        </div>
         <div class="header__bottom">
           <div class="container">
             <ul class="menu-categories">
@@ -91,18 +193,20 @@
       </header>
 
       <div class="breadcrumbs">
-        <div class="container">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__list-item">
-              <a href="#">Главная</a>
-            </li>
-            <li class="breadcrumbs__list-item">
-              <a href="#">Гидроциклы</a>
-            </li>
-            <li class="breadcrumbs__list-item">
-              <span>Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</span>
-            </li>
-          </ul>
+        <div class="breadcrumbs__inner">
+          <div class="container">
+            <ul class="breadcrumbs__list mobile-overflow">
+              <li class="breadcrumbs__list-item">
+                <a href="#">Главная</a>
+              </li>
+              <li class="breadcrumbs__list-item">
+                <a href="#">Гидроциклы</a>
+              </li>
+              <li class="breadcrumbs__list-item">
+                <span>Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -114,6 +218,9 @@
               <p class="product-card__price-old">1 200 475 ₽</p>
               <p class="product-card__price-new">1 100 475 ₽</p>
               <a class="product-card__link" href="#">Нашли дешевле? Снизим цену!</a>
+              <div class="product-card__btn product-card__btn-mobile">
+                <button>купить</button>
+              </div>
             </div>
             <div class="product-card__content">
               <h1 class="product-card__title">
@@ -128,9 +235,11 @@
                 </a>
               </div>
               <div class="tabs-wrapper product-card__tabs">
-                <div class="tabs">
-                  <a class="tab tab--active product-card__tab" href="#product-card-1">Характеристики</a>
-                  <a class="tab product-card__tab" href="#product-card-2">Наличие в магазине</a>
+                <div class="product-card__tab-wrapper">
+                  <div class="tabs">
+                    <a class="tab tab--active product-card__tab" href="#product-card-1">Характеристики</a>
+                    <a class="tab product-card__tab" href="#product-card-2">Наличие в магазине</a>
+                  </div>
                 </div>
                 <div class="tabs-container">
                   <div id="product-card-1" class="tabs-content tabs-content--active product-card__tabs-content">
@@ -174,7 +283,7 @@
       <section class="card__tabs">
         <div class="container">
           <div class="tabs-wrapper">
-            <div class="tabs card__tab-box">
+            <div class="tabs card__tab-box mobile-overflow">
               <a class="tab card__tab" href="#product-card__tabs-1">О товаре</a>
               <a class="tab card__tab" href="#product-card__tabs-2">Характеристики</a>
               <a class="tab card__tab" href="#product-card__tabs-3">Отзывы</a>
@@ -183,371 +292,371 @@
               <a class="tab card__tab" href="#product-card__tabs-6">Cервис</a>
               <a class="tab card__tab" href="#product-card__tabs-7">Гарантия</a>
             </div>
-            <div class="tabs-container product-card__tabs-container">              
-              <div id="product-card__tabs-1" class="tabs-content card__tab-content">content</div>
-              <div id="product-card__tabs-2" class="tabs-content card__tab-content">content</div>
-              <div id="product-card__tabs-3" class="tabs-content card__tab-content">content</div>
-              <div id="product-card__tabs-4" class="tabs-content card__tab-content tabs-content--active">
-                <form class="">
-                  <div class="card__top-line">
-                    <label class="card__label-search" for="">Магазин
-                      <input class="card__input-search" type="text">
-                    </label>
-                    <label class="card__label-pickup">
-                      <input class="filter-style" type="radio" name="pickup">
-                      Забрать сегодня
-                    </label>
-                    <label class="card__label-pickup">
-                      <input class="filter-style" type="radio" name="pickup" checked>
-                      Забрать в течение недели
-                    </label>
-                  </div>
-                  <ul class="card__list">
-                    <li class="card__list-item card-list__itemtitle">
-                      <div class="card__list-address">Адрес</div>
-                      <div class="card__list-workhours">Режим работы</div>
-                      <div class="card__list-avialable">Доступно</div>
-                      <div class="card__list-num">Количество</div>
-                      <div class="card__list-btn"></div>
-                    </li>
-                    <li class="card__list-item">
-                      <div class="card__list-address">Москва, ул. Науки 25</div>
-                      <div class="card__list-workhours">
-                        <div class="workhours">
-                          <span>пн-сб:</span><span>08:00-19:00</span>
-                        </div>
-                        <div class="workhours">
-                          <span>вс:</span><span>09:00-17:00</span>
-                        </div>
-                      </div>
-                      <div class="card__list-avialable">В наличии</div>
-                      <div class="card__list-num">1</div>
-                      <div class="card__list-btn">
-                        <button type="submit">купить</button>
-                      </div>
-                    </li>
-                    <li class="card__list-item">
-                      <div class="card__list-address">Москва, ул.  Южная 134</div>
-                      <div class="card__list-workhours">
-                        <div class="workhours">
-                          <span>пн-сб:</span><span>08:00-19:00</span>
-                        </div>
-                        <div class="workhours">
-                          <span>вс:</span><span>09:00-17:00</span>
-                        </div>
-                      </div>
-                      <div class="card__list-avialable">В наличии</div>
-                      <div class="card__list-num">2</div>
-                      <div class="card__list-btn">
-                        <button type="submit">купить</button>
-                      </div>
-                    </li>
-                    <li class="card__list-item">
-                      <div class="card__list-address">Санкт-Петербург, <br>
-                        ул. Красная 19</div>
-                      <div class="card__list-workhours">
-                        <div class="workhours">
-                          <span>пн-сб:</span><span>08:00-19:00</span>
-                        </div>
-                        <div class="workhours">
-                          <span>вс:</span><span>09:00-17:00</span>
-                        </div>
-                      </div>
-                      <div class="card__list-avialable">Нет в наличии</div>
-                      <div class="card__list-num">0</div>
-                      <div class="card__list-btn">
-                        <button type="submit">купить</button>
-                      </div>
-                    </li>
-                    <li class="card__list-item">
-                      <div class="card__list-address">Киев, ул Шевченко 167</div>
-                      <div class="card__list-workhours">
-                        <div class="workhours">
-                          <span>пн-сб:</span><span>08:00-19:00</span>
-                        </div>
-                        <div class="workhours">
-                          <span>вс:</span><span>09:00-17:00</span>
-                        </div>
-                      </div>
-                      <div class="card__list-avialable">Нет в наличии</div>
-                      <div class="card__list-num">0</div>
-                      <div class="card__list-btn">
-                        <button type="submit">купить</button>
-                      </div>
-                    </li>
-                  </ul>
-                </form>
-              </div>
-              <div id="product-card__tabs-5" class="tabs-content card__tab-content">content</div>
-              <div id="product-card__tabs-6" class="tabs-content card__tab-content">content</div>
-              <div id="product-card__tabs-7" class="tabs-content card__tab-content">content</div>
-            </div>
           </div>
-        </div>
-      </section>
-
-      <section class="products page-section">
-        <div class="container">
-          <div class="products__inner">
-            <h4 class="product__title">С этим товаром покупают</h4>
-            <div class="tabs-wrapper">
-              <div class="tabs products__tabs">
-                <a class="tab tab--active products__tab" href="#popular-tab-1">запчасти</a>
-                <a class="tab products__tab" href="#popular-tab-2">моторы</a>
-                <a class="tab products__tab" href="#popular-tab-3">шины </a>
-                <a class="tab products__tab" href="#popular-tab-4">электроника</a>
-                <a class="tab products__tab" href="#popular-tab-5">инструменты</a>
-                <a class="tab products__tab" href="#popular-tab-6">аксессуары</a>
-              </div>
-              <div class="tabs-container products__container">
-                <div id="popular-tab-1" class="tabs-content products__content tabs-content--active">
-                  <div class="product-slider">
-                    <div class="product-slider__item">
-                      <div class="product-item__wrapper">
-                        <button class="product-item__favorite"></button>
-                        <button class="product-item__basket">
-                          <img src="images/basket-white.svg" alt="">
-                        </button>
-                        <a class="product-item__notify-link" href="#"><span>Сообщить о поступлении</span></a>
-                        <a class="product-item" href="#">
-                          <p class="product-item__hover-text">посмотреть товар</p>
-                          <img src="images/content/popular-1.png" alt="" class="product-item__img">
-                          <h4 class="product-item__title">BRP Audio-портативная система</h4>
-                          <p class="product-item__price price">9 800 ₽</p>
-                          <p class="product-item__notify-text">нет в наличии</p>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="product-slider__item">
-                      <div class="product-item__wrapper">
-                        <button class="product-item__favorite"></button>
-                        <button class="product-item__basket">
-                          <img src="images/basket-white.svg" alt="">
-                        </button>
-                        <a class="product-item__notify-link" href="#"><span>Сообщить о поступлении</span></a>
-                        <a class="product-item product-item--sale" href="#">
-                          <p class="product-item__hover-text">посмотреть товар</p>
-                          <img src="images/content/popular-2.png" alt="" class="product-item__img">
-                          <h4 class="product-item__title">Garmin Echomap Plus 62cv
-                          </h4>
-                          <p class="product-item__price price">6 900 ₽</p>
-                          <p class="product-item__notify-text">нет в наличии</p>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="product-slider__item">
-                      <div class="product-item__wrapper">
-                        <button class="product-item__favorite"></button>
-                        <button class="product-item__basket">
-                          <img src="images/basket-white.svg" alt="">
-                        </button>
-                        <a class="product-item__notify-link" href="#"><span>Сообщить о поступлении</span></a>
-                        <a class="product-item" href="#">
-                          <p class="product-item__hover-text">посмотреть товар</p>
-                          <img src="images/content/popular-3.png" alt="" class="product-item__img">
-                          <h4 class="product-item__title">
-                            RF D.E.S.S.TM Key</h4>
-                          <p class="product-item__price price">68 000 ₽</p>
-                          <p class="product-item__notify-text">нет в наличии</p>
-                        </a>
-                      </div>
-                    </div>
-
-
-                    <div class="product-slider__item">
-                      <div class="product-item__wrapper product-item__not-available">
-                        <button class="product-item__favorite"></button>
-                        <button class="product-item__basket">
-                          <img src="images/basket-white.svg" alt="">
-                        </button>
-                        <a class="product-item__notify-link" href="#"><span>Сообщить о поступлении</span></a>
-                        <a class="product-item product-item--sale" href="#">
-                          <p class="product-item__hover-text">посмотреть товар</p>
-                          <img src="images/content/popular-4.png" alt="" class="product-item__img">
-                          <h4 class="product-item__title">Мужской костюм
-                            3мм</h4>
-                          <p class="product-item__price price">68 000 ₽</p>
-                          <p class="product-item__notify-text">нет в наличии</p>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="product-slider__item">
-                      <div class="product-item__wrapper">
-                        <button class="product-item__favorite"></button>
-                        <button class="product-item__basket">
-                          <img src="images/basket-white.svg" alt="">
-                        </button>
-                        <a class="product-item__notify-link" href="#"><span>Сообщить о поступлении</span></a>
-                        <a class="product-item" href="#">
-                          <p class="product-item__hover-text">посмотреть товар</p>
-                          <img src="images/content/popular-1.png" alt="" class="product-item__img">
-                          <h4 class="product-item__title">ВBRP Audio-портативная система</h4>
-                          <p class="product-item__price price">9 800 ₽</p>
-                          <p class="product-item__notify-text">нет в наличии</p>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="product-slider__item">
-                      <div class="product-item__wrapper">
-                        <button class="product-item__favorite"></button>
-                        <button class="product-item__basket">
-                          <img src="images/basket-white.svg" alt="">
-                        </button>
-                        <a class="product-item__notify-link" href="#"><span>Сообщить о поступлении</span></a>
-                        <a class="product-item product-item--sale" href="#">
-                          <p class="product-item__hover-text">посмотреть товар</p>
-                          <img src="images/content/popular-2.png" alt="" class="product-item__img">
-                          <h4 class="product-item__title">Garmin Echomap Plus 62cv
-                          </h4>
-                          <p class="product-item__price price">6 900 ₽</p>
-                          <p class="product-item__notify-text">нет в наличии</p>
-                        </a>
-                      </div>
-                    </div>
-
-                    <div class="product-slider__item">
-                      <div class="product-item__wrapper">
-                        <button class="product-item__favorite"></button>
-                        <button class="product-item__basket">
-                          <img src="images/basket-white.svg" alt="">
-                        </button>
-                        <a class="product-item__notify-link" href="#"><span>Сообщить о поступлении</span></a>
-                        <a class="product-item" href="#">
-                          <p class="product-item__hover-text">посмотреть товар</p>
-                          <img src="images/content/popular-3.png" alt="" class="product-item__img">
-                          <h4 class="product-item__title">
-                            RF D.E.S.S.TM Key</h4>
-                          <p class="product-item__price price">68 000 ₽</p>
-                          <p class="product-item__notify-text">нет в наличии</p>
-                        </a>
-                      </div>
-                    </div>
-
-
-                    <div class="product-slider__item">
-                      <div class="product-item__wrapper product-item__not-available">
-                        <button class="product-item__favorite"></button>
-                        <button class="product-item__basket">
-                          <img src="images/basket-white.svg" alt="">
-                        </button>
-                        <a class="product-item__notify-link" href="#"><span>Сообщить о поступлении</span></a>
-                        <a class="product-item product-item--sale" href="#">
-                          <p class="product-item__hover-text">посмотреть товар</p>
-                          <img src="images/content/popular-4.png" alt="" class="product-item__img">
-                          <h4 class="product-item__title">Мужской костюм
-                            3мм</h4>
-                          <p class="product-item__price price">68 000 ₽</p>
-                          <p class="product-item__notify-text">нет в наличии</p>
-                        </a>
-                      </div>
-                    </div>
-
-
-                  </div>
+          <div class="tabs-container product-card__tabs-container">
+            <div id="product-card__tabs-1" class="tabs-content card__tab-content">content</div>
+            <div id="product-card__tabs-2" class="tabs-content card__tab-content">content</div>
+            <div id="product-card__tabs-3" class="tabs-content card__tab-content">content</div>
+            <div id="product-card__tabs-4" class="tabs-content card__tab-content tabs-content--active">
+              <form class="">
+                <div class="card__top-line">
+                  <label class="card__label-search" for="">Магазин
+                    <input class="card__input-search" type="text">
+                  </label>
+                  <label class="card__label-pickup">
+                    <input class="filter-style" type="radio" name="pickup">
+                    Забрать сегодня
+                  </label>
+                  <label class="card__label-pickup">
+                    <input class="filter-style" type="radio" name="pickup" checked>
+                    Забрать в течение недели
+                  </label>
                 </div>
-                <div id="popular-tab-2" class="tabs-content products__content"></div>
-                <div id="popular-tab-3" class="tabs-content products__content"></div>
-                <div id="popular-tab-4" class="tabs-content products__content"></div>
-                <div id="popular-tab-5" class="tabs-content products__content"></div>
-                <div id="popular-tab-6" class="tabs-content products__content"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-   
-
-    </div>
-    <div class="footer">
-      <div class="footer__top">
-        <div class="container">
-          <div class="footer__top-inner">
-            <div class="footer__top-item footer__top-newslatter">
-              <h6 class="footer__top-title">
-                Подпишитесь на нашу рассылку
-                и узнавайте о акциях быстрее
-              </h6>
-              <form class="footer-form">
-                <input class="footer-form__input" type="text" placeholder="Введите ваш e-mail:" required>
-                <button class="footer-form__btn">Отправить</button>
+                <ul class="card__list">
+                  <li class="card__list-item card-list__itemtitle">
+                    <div class="card__list-address">Адрес</div>
+                    <div class="card__list-workhours">Режим работы</div>
+                    <div class="card__list-avialable">Доступно</div>
+                    <div class="card__list-num">Количество</div>
+                    <div class="card__list-btn"></div>
+                  </li>
+                  <li class="card__list-item">
+                    <div class="card__list-address">Москва, ул. Науки 25</div>
+                    <div class="card__list-workhours">
+                      <div class="workhours">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                      </div>
+                      <div class="workhours">
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                    </div>
+                    <div class="card__list-avialable">В наличии</div>
+                    <div class="card__list-num">1</div>
+                    <div class="card__list-btn">
+                      <button type="submit">купить</button>
+                    </div>
+                  </li>
+                  <li class="card__list-item">
+                    <div class="card__list-address">Москва, ул. Южная 134</div>
+                    <div class="card__list-workhours">
+                      <div class="workhours">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                      </div>
+                      <div class="workhours">
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                    </div>
+                    <div class="card__list-avialable">В наличии</div>
+                    <div class="card__list-num">2</div>
+                    <div class="card__list-btn">
+                      <button type="submit">купить</button>
+                    </div>
+                  </li>
+                  <li class="card__list-item">
+                    <div class="card__list-address">Санкт-Петербург, <br>
+                      ул. Красная 19</div>
+                    <div class="card__list-workhours">
+                      <div class="workhours">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                      </div>
+                      <div class="workhours">
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                    </div>
+                    <div class="card__list-avialable">Нет в наличии</div>
+                    <div class="card__list-num">0</div>
+                    <div class="card__list-btn">
+                      <button type="submit">купить</button>
+                    </div>
+                  </li>
+                  <li class="card__list-item">
+                    <div class="card__list-address">Киев, ул Шевченко 167</div>
+                    <div class="card__list-workhours">
+                      <div class="workhours">
+                        <span>пн-сб:</span><span>08:00-19:00</span>
+                      </div>
+                      <div class="workhours">
+                        <span>вс:</span><span>09:00-17:00</span>
+                      </div>
+                    </div>
+                    <div class="card__list-avialable">Нет в наличии</div>
+                    <div class="card__list-num">0</div>
+                    <div class="card__list-btn">
+                      <button type="submit">купить</button>
+                    </div>
+                  </li>
+                </ul>
               </form>
             </div>
-            <div class="footer__top-item">
-              <h6 class="footer__top-title">
-                Информация
-              </h6>
-              <ul class="footer-list">
-                <li class="footer-list__item">
-                  <a class="footer-list__link" href="#">О компании</a>
-                </li>
-                <li class="footer-list__item">
-                  <a class="footer-list__link" href="#">Контакты</a>
-                </li>
-                <li class="footer-list__item">
-                  <a class="footer-list__link" href="#">Акции</a>
-                </li>
-                <li class="footer-list__item">
-                  <a class="footer-list__link" href="#">Магазины</a>
-                </li>
-              </ul>
+            <div id="product-card__tabs-5" class="tabs-content card__tab-content">content</div>
+            <div id="product-card__tabs-6" class="tabs-content card__tab-content">content</div>
+            <div id="product-card__tabs-7" class="tabs-content card__tab-content">content</div>
+          </div>
+        </div>    
+    </section>
+
+    <section class="products page-section">
+      <div class="container">
+        <div class="products__inner">
+          <h4 class="product__title">С этим товаром покупают</h4>
+          <div class="tabs-wrapper">
+            <div class="tabs products__tabs mobile-overflow">
+              <a class="tab tab--active products__tab" href="#popular-tab-1">запчасти</a>
+              <a class="tab products__tab" href="#popular-tab-2">моторы</a>
+              <a class="tab products__tab" href="#popular-tab-3">шины </a>
+              <a class="tab products__tab" href="#popular-tab-4">электроника</a>
+              <a class="tab products__tab" href="#popular-tab-5">инструменты</a>
+              <a class="tab products__tab" href="#popular-tab-6">аксессуары</a>
             </div>
-            <div class="footer__top-item">
-              <h6 class="footer__top-title">
-                Интернет-магазин
-              </h6>
-              <ul class="footer-list">
-                <li class="footer-list__item">
-                  <a class="footer-list__link" href="#">Доставка и самовывоз</a>
-                </li>
-                <li class="footer-list__item">
-                  <a class="footer-list__link" href="#">Оплата</a>
-                </li>
-                <li class="footer-list__item">
-                  <a class="footer-list__link" href="#">Возврат-обмен</a>
-                </li>
-                <li class="footer-list__item">
-                  <a class="footer-list__link" href="#">Новости</a>
-                </li>
-              </ul>
+          </div>
+          <div class="tabs-container products__container">
+            <div id="popular-tab-1" class="tabs-content products__content tabs-content--active">
+              <div class="product-slider">
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket">
+                      <img src="images/basket-white.svg" alt="">
+                    </button>
+                    <a class="product-item__notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                    <a class="product-item" href="#">
+                      <p class="product-item__hover-text">посмотреть товар</p>
+                      <img src="images/content/popular-1.png" alt="" class="product-item__img">
+                      <h4 class="product-item__title">BRP Audio-портативная система</h4>
+                      <p class="product-item__price price">9 800 ₽</p>
+                      <p class="product-item__notify-text">нет в наличии</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket">
+                      <img src="images/basket-white.svg" alt="">
+                    </button>
+                    <a class="product-item__notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                    <a class="product-item product-item--sale" href="#">
+                      <p class="product-item__hover-text">посмотреть товар</p>
+                      <img src="images/content/popular-2.png" alt="" class="product-item__img">
+                      <h4 class="product-item__title">Garmin Echomap Plus 62cv
+                      </h4>
+                      <p class="product-item__price price">6 900 ₽</p>
+                      <p class="product-item__notify-text">нет в наличии</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket">
+                      <img src="images/basket-white.svg" alt="">
+                    </button>
+                    <a class="product-item__notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                    <a class="product-item" href="#">
+                      <p class="product-item__hover-text">посмотреть товар</p>
+                      <img src="images/content/popular-3.png" alt="" class="product-item__img">
+                      <h4 class="product-item__title">
+                        RF D.E.S.S.TM Key</h4>
+                      <p class="product-item__price price">68 000 ₽</p>
+                      <p class="product-item__notify-text">нет в наличии</p>
+                    </a>
+                  </div>
+                </div>
+
+
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper product-item__not-available">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket">
+                      <img src="images/basket-white.svg" alt="">
+                    </button>
+                    <a class="product-item__notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                    <a class="product-item product-item--sale" href="#">
+                      <p class="product-item__hover-text">посмотреть товар</p>
+                      <img src="images/content/popular-4.png" alt="" class="product-item__img">
+                      <h4 class="product-item__title">Мужской костюм
+                        3мм</h4>
+                      <p class="product-item__price price">68 000 ₽</p>
+                      <p class="product-item__notify-text">нет в наличии</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket">
+                      <img src="images/basket-white.svg" alt="">
+                    </button>
+                    <a class="product-item__notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                    <a class="product-item" href="#">
+                      <p class="product-item__hover-text">посмотреть товар</p>
+                      <img src="images/content/popular-1.png" alt="" class="product-item__img">
+                      <h4 class="product-item__title">ВBRP Audio-портативная система</h4>
+                      <p class="product-item__price price">9 800 ₽</p>
+                      <p class="product-item__notify-text">нет в наличии</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket">
+                      <img src="images/basket-white.svg" alt="">
+                    </button>
+                    <a class="product-item__notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                    <a class="product-item product-item--sale" href="#">
+                      <p class="product-item__hover-text">посмотреть товар</p>
+                      <img src="images/content/popular-2.png" alt="" class="product-item__img">
+                      <h4 class="product-item__title">Garmin Echomap Plus 62cv
+                      </h4>
+                      <p class="product-item__price price">6 900 ₽</p>
+                      <p class="product-item__notify-text">нет в наличии</p>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket">
+                      <img src="images/basket-white.svg" alt="">
+                    </button>
+                    <a class="product-item__notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                    <a class="product-item" href="#">
+                      <p class="product-item__hover-text">посмотреть товар</p>
+                      <img src="images/content/popular-3.png" alt="" class="product-item__img">
+                      <h4 class="product-item__title">
+                        RF D.E.S.S.TM Key</h4>
+                      <p class="product-item__price price">68 000 ₽</p>
+                      <p class="product-item__notify-text">нет в наличии</p>
+                    </a>
+                  </div>
+                </div>
+
+
+                <div class="product-slider__item">
+                  <div class="product-item__wrapper product-item__not-available">
+                    <button class="product-item__favorite"></button>
+                    <button class="product-item__basket">
+                      <img src="images/basket-white.svg" alt="">
+                    </button>
+                    <a class="product-item__notify-link" href="#"><span>Сообщить о поступлении</span></a>
+                    <a class="product-item product-item--sale" href="#">
+                      <p class="product-item__hover-text">посмотреть товар</p>
+                      <img src="images/content/popular-4.png" alt="" class="product-item__img">
+                      <h4 class="product-item__title">Мужской костюм
+                        3мм</h4>
+                      <p class="product-item__price price">68 000 ₽</p>
+                      <p class="product-item__notify-text">нет в наличии</p>
+                    </a>
+                  </div>
+                </div>
+
+
+              </div>
             </div>
-            <div class="footer__top-item footer__top-social">
-              <ul class="social-list">
-                <li class="social-list__item">
-                  <a class="social-list__link" href="#">
-                    <img src="images/instagram.svg" alt="">
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="#">
-                    <img src="images/vkontakte.svg" alt="">
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="#">
-                    <img src="images/facebook.svg" alt="">
-                  </a>
-                </li>
-                <li class="social-list__item">
-                  <a class="social-list__link" href="#">
-                    <img src="images/youtube.svg" alt="">
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <div id="popular-tab-2" class="tabs-content products__content"></div>
+            <div id="popular-tab-3" class="tabs-content products__content"></div>
+            <div id="popular-tab-4" class="tabs-content products__content"></div>
+            <div id="popular-tab-5" class="tabs-content products__content"></div>
+            <div id="popular-tab-6" class="tabs-content products__content"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <div class="footer">
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__top-inner">
+          <div class="footer__top-item footer__top-newslatter">
+            <h6 class="footer__top-title">
+              Подпишитесь на нашу рассылку
+              и узнавайте о акциях быстрее
+            </h6>
+            <form class="footer-form">
+              <input class="footer-form__input" type="text" placeholder="Введите ваш e-mail:" required>
+              <button class="footer-form__btn">Отправить</button>
+            </form>
+          </div>
+          <div class="footer__top-item footer__top-itemdrop">
+            <h6 class="footer__top-title footer__topdrop">
+              Информация
+            </h6>
+            <ul class="footer-list">
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">О компании</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">Контакты</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">Акции</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">Магазины</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__top-item">
+            <h6 class="footer__top-title footer__topdrop">
+              Интернет-магазин
+            </h6>
+            <ul class="footer-list">
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">Доставка и самовывоз</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">Оплата</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">Возврат-обмен</a>
+              </li>
+              <li class="footer-list__item">
+                <a class="footer-list__link" href="#">Новости</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__top-item footer__top-social">
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <img src="images/instagram.svg" alt="">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <img src="images/vkontakte.svg" alt="">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <img src="images/facebook.svg" alt="">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link" href="#">
+                  <img src="images/youtube.svg" alt="">
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="footer__bottom">
-        <div class="container">
-          <a class="footer__bottom-link" href="#">Договор оферты</a>
-          <a class="footer__bottom-link" href="#">Политика обработки персональных данных</a>
-        </div>
-      </div>
     </div>
+    <div class="footer__bottom">
+
+      <a class="footer__bottom-link" href="#">Договор оферты</a>
+      <a class="footer__bottom-link" href="#">Политика обработки персональных данных</a>
+
+    </div>
+  </div>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

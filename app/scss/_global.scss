@@ -64,6 +64,7 @@ body{
 	font-size: 20px;
 	line-height: 24px;
 	@include sf-regular;	
+	
 	overflow-x: hidden;
 	min-width: 320px;
 }
@@ -82,6 +83,9 @@ body{
 //breadcrumbs
 .breadcrumbs{
 	margin-bottom: 40px;
+	&__inner{
+		
+	}
 }
 .breadcrumbs__list-item{
 	display: inline-block;
